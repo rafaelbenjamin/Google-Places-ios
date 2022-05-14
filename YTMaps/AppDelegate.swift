@@ -5,16 +5,15 @@
 //  Created by Rafael Benjamin on 13/05/22.
 //
 
+import GooglePlaces
 import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        GooglePlacesManager.shared.setUp()
+        GMSPlacesClient.provideAPIKey(self.apiKey)
         
         return true
     }
@@ -34,5 +33,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+
+//MARK: - Get Api Keys from Keys.plist
+extension AppDelegate {
+    private var apiKey: String {
+           get {
+               guard let filePath = Bundle.main.path(forResource: "Keys", ofType: "plist") else {
+                   fatalError("Couldn't find file 'Keys.plist'.")
+               }
+               let plist = NSDictionary(contentsOfFile: filePath)
+               guard let value = plist?.object(forKey: "GooglePlacesKey") as? String else {
+                   fatalError("Couldn't find key 'GooglePlacesKey' in 'Keys.plist'.")
+               }
+               if (value.starts(with: "_")) {
+                   fatalError("Register for a Google Places developer account and get an API key at https://developers.google.com/maps/documentation/places/ios-sdk/get-api-key")
+               }
+               return value
+           }
+       }
 }
 

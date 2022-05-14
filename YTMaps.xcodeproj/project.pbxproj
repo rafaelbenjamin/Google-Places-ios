@@ -60,7 +60,6 @@
 		83AA8113282EBA9D00586486 = {
 			isa = PBXGroup;
 			children = (
-				83AA8135282F08D800586486 /* GooglePlacesManager.swift */,
 				83AA811E282EBA9D00586486 /* YTMaps */,
 				83AA811D282EBA9D00586486 /* Products */,
 				1532C96CBF89C1AAFC2A65FA /* Pods */,
@@ -88,6 +87,7 @@
 				83AA812D282EBA9F00586486 /* Info.plist */,
 				83F61AFC282F3F86001D9F14 /* Keys.plist */,
 				83AA8133282EBBA900586486 /* ResultsViewController.swift */,
+				83AA8135282F08D800586486 /* GooglePlacesManager.swift */,
 			);
 			path = YTMaps;
 			sourceTree = "<group>";
