@@ -15,6 +15,7 @@
 		83AA812C282EBA9F00586486 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83AA812A282EBA9F00586486 /* LaunchScreen.storyboard */; };
 		83AA8134282EBBA900586486 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AA8133282EBBA900586486 /* ResultsViewController.swift */; };
 		83AA8136282F08D800586486 /* GooglePlacesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AA8135282F08D800586486 /* GooglePlacesManager.swift */; };
+		83F61AFD282F3F86001D9F14 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83F61AFC282F3F86001D9F14 /* Keys.plist */; };
 		C5AF0095097910D9B8DD614B /* Pods_YTMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E5F11679B1E8CD39892F2FB /* Pods_YTMaps.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		83AA812D282EBA9F00586486 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83AA8133282EBBA900586486 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		83AA8135282F08D800586486 /* GooglePlacesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesManager.swift; sourceTree = "<group>"; };
+		83F61AFC282F3F86001D9F14 /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 		A052053D9448F7A1F5AC0420 /* Pods-YTMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YTMaps.debug.xcconfig"; path = "Target Support Files/Pods-YTMaps/Pods-YTMaps.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +86,7 @@
 				83AA8128282EBA9F00586486 /* Assets.xcassets */,
 				83AA812A282EBA9F00586486 /* LaunchScreen.storyboard */,
 				83AA812D282EBA9F00586486 /* Info.plist */,
+				83F61AFC282F3F86001D9F14 /* Keys.plist */,
 				83AA8133282EBBA900586486 /* ResultsViewController.swift */,
 			);
 			path = YTMaps;
@@ -157,6 +160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83F61AFD282F3F86001D9F14 /* Keys.plist in Resources */,
 				83AA812C282EBA9F00586486 /* LaunchScreen.storyboard in Resources */,
 				83AA8129282EBA9F00586486 /* Assets.xcassets in Resources */,
 				83AA8127282EBA9D00586486 /* Main.storyboard in Resources */,
