@@ -12,6 +12,8 @@ class ViewController: UIViewController, UISearchResultsUpdating, UISearchControl
     
     @IBOutlet weak var mapView: MKMapView!
     
+    var searchController:UISearchController? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Maps"
@@ -20,13 +22,13 @@ class ViewController: UIViewController, UISearchResultsUpdating, UISearchControl
         configureSearchController(resultsController as? ResultsViewController ?? ResultsViewController())
     }
     
-    private func configureSearchController(_ searchResultsController: ResultsViewController) {
-        let searchController = UISearchController(searchResultsController: searchResultsController)
-        searchController.searchResultsUpdater = self
-        searchController.delegate = self
-        searchController.searchBar.backgroundColor = .secondarySystemBackground
-        searchController.searchBar.barTintColor = .white
-        searchController.searchBar.searchBarStyle = .minimal
+    private func configureSearchController(_ searchResultsController: ResultsViewController){
+        searchController = UISearchController(searchResultsController: searchResultsController)
+        searchController?.searchResultsUpdater = self
+        searchController?.delegate = self
+        searchController?.searchBar.backgroundColor = .secondarySystemBackground
+        searchController?.searchBar.barTintColor = .white
+        searchController?.searchBar.searchBarStyle = .minimal
         navigationItem.searchController = searchController
     }
     
@@ -34,6 +36,8 @@ class ViewController: UIViewController, UISearchResultsUpdating, UISearchControl
         
         guard let query = searchController.searchBar.text,
               !query.trimmingCharacters(in: .whitespaces).isEmpty, let resultsVC = searchController.searchResultsController as?  ResultsViewController else { return }
+        
+        resultsVC.delegate = self
         
         GooglePlacesManager.shared.findPlaces(query: query) { result in
             switch result {
@@ -49,5 +53,28 @@ class ViewController: UIViewController, UISearchResultsUpdating, UISearchControl
     }
     
     
+}
+
+extension ViewController: ResultsViewControllerDelegate {
+    func didTapPlace(with coordinates: CLLocationCoordinate2D) {
+        searchController?.searchBar.resignFirstResponder()
+        searchController?.dismiss(animated: true, completion: nil)
+        
+        //Remove all map pins
+        let annotations = mapView.annotations
+        mapView.removeAnnotations(annotations)
+        
+        //Add a map pin
+        let pin = MKPointAnnotation()
+        pin.coordinate = coordinates
+        mapView.addAnnotation(pin)
+        mapView.setRegion(
+            MKCoordinateRegion(
+                center: coordinates,
+                span: MKCoordinateSpan(
+                    latitudeDelta: 0.2,
+                    longitudeDelta: 0.2)),
+            animated: true)
+    }
 }
 
