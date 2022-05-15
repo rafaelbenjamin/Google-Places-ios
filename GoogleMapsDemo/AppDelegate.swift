@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  YTMaps
+//  GoogleMapsDemo
 //
 //  Created by Rafael Benjamin on 13/05/22.
 //
@@ -47,7 +47,7 @@ extension AppDelegate {
                    fatalError("Couldn't find key 'GooglePlacesKey' in 'Keys.plist'.")
                }
                if (value.starts(with: "_")) {
-                   fatalError("Register for a Google Places developer account and get an API key at https://developers.google.com/maps/documentation/places/ios-sdk/get-api-key")
+                   fatalError("Register for a Google Cloud Platform developer account and get an API key at https://developers.google.com/maps/documentation/places/ios-sdk/cloud-setup")
                }
                return value
            }

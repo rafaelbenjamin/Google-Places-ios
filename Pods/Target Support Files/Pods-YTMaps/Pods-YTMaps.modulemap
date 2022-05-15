@@ -1,6 +1,0 @@
-framework module Pods_YTMaps {
-  umbrella header "Pods-YTMaps-umbrella.h"
-
-  export *
-  module * { export * }
-}

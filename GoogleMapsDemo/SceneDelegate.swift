@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  YTMaps
+//  GoogleMapsDemo
 //
 //  Created by Rafael Benjamin on 13/05/22.
 //

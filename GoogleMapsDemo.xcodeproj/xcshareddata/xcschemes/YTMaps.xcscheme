@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "83AA811B282EBA9D00586486"
-               BuildableName = "YTMaps.app"
-               BlueprintName = "YTMaps"
-               ReferencedContainer = "container:YTMaps.xcodeproj">
+               BuildableName = "GoogleMapsDemo.app"
+               BlueprintName = "GoogleMapsDemo"
+               ReferencedContainer = "container:GoogleMapsDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "83AA811B282EBA9D00586486"
-            BuildableName = "YTMaps.app"
-            BlueprintName = "YTMaps"
-            ReferencedContainer = "container:YTMaps.xcodeproj">
+            BuildableName = "GoogleMapsDemo.app"
+            BlueprintName = "GoogleMapsDemo"
+            ReferencedContainer = "container:GoogleMapsDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "83AA811B282EBA9D00586486"
-            BuildableName = "YTMaps.app"
-            BlueprintName = "YTMaps"
-            ReferencedContainer = "container:YTMaps.xcodeproj">
+            BuildableName = "GoogleMapsDemo.app"
+            BlueprintName = "GoogleMapsDemo"
+            ReferencedContainer = "container:GoogleMapsDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
