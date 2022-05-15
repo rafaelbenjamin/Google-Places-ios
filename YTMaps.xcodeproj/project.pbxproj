@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		838EBEA628303A2900738677 /* Result.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838EBEA528303A2900738677 /* Result.storyboard */; };
 		83AA8120282EBA9D00586486 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AA811F282EBA9D00586486 /* AppDelegate.swift */; };
 		83AA8122282EBA9D00586486 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AA8121282EBA9D00586486 /* SceneDelegate.swift */; };
 		83AA8124282EBA9D00586486 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AA8123282EBA9D00586486 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		3E5F11679B1E8CD39892F2FB /* Pods_YTMaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YTMaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D939B907F6BFF5309B6DA5 /* Pods-YTMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YTMaps.release.xcconfig"; path = "Target Support Files/Pods-YTMaps/Pods-YTMaps.release.xcconfig"; sourceTree = "<group>"; };
+		838EBEA528303A2900738677 /* Result.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Result.storyboard; sourceTree = "<group>"; };
 		83AA811C282EBA9D00586486 /* YTMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YTMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83AA811F282EBA9D00586486 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83AA8121282EBA9D00586486 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				83F61AFC282F3F86001D9F14 /* Keys.plist */,
 				83AA8133282EBBA900586486 /* ResultsViewController.swift */,
 				83AA8135282F08D800586486 /* GooglePlacesManager.swift */,
+				838EBEA528303A2900738677 /* Result.storyboard */,
 			);
 			path = YTMaps;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				838EBEA628303A2900738677 /* Result.storyboard in Resources */,
 				83F61AFD282F3F86001D9F14 /* Keys.plist in Resources */,
 				83AA812C282EBA9F00586486 /* LaunchScreen.storyboard in Resources */,
 				83AA8129282EBA9F00586486 /* Assets.xcassets in Resources */,

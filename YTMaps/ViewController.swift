@@ -11,11 +11,17 @@ import MapKit
 class ViewController: UIViewController, UISearchResultsUpdating, UISearchControllerDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
-    let searchController = UISearchController(searchResultsController: ResultsViewController())
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Maps"
+        self.title = "Maps"
+        let storyboard = UIStoryboard(name: "Result", bundle: nil)
+        let resultsController = storyboard.instantiateViewController(withIdentifier: "ResultsViewController")
+        configureSearchController(resultsController as? ResultsViewController ?? ResultsViewController())
+    }
+    
+    private func configureSearchController(_ searchResultsController: ResultsViewController) {
+        let searchController = UISearchController(searchResultsController: searchResultsController)
         searchController.searchResultsUpdater = self
         searchController.delegate = self
         searchController.searchBar.backgroundColor = .secondarySystemBackground
@@ -25,20 +31,22 @@ class ViewController: UIViewController, UISearchResultsUpdating, UISearchControl
     }
     
     func updateSearchResults(for searchController: UISearchController) {
+        
         guard let query = searchController.searchBar.text,
-              !query.trimmingCharacters(in: .whitespaces).isEmpty else {
-            return
-        }
+              !query.trimmingCharacters(in: .whitespaces).isEmpty, let resultsVC = searchController.searchResultsController as?  ResultsViewController else { return }
+        
         GooglePlacesManager.shared.findPlaces(query: query) { result in
             switch result {
             case .success(let places):
+                DispatchQueue.main.async {
+                    resultsVC.update(with: places)
+                }
                 print(places)
             case .failure(let error):
                 print(error)
             }
         }
     }
-    
     
     
 }
