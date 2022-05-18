@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_GoogleMapsDemoVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_GoogleMapsDemoVersionString[];
+FOUNDATION_EXPORT double Pods_GooglePlacesDemoSwiftVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_GooglePlacesDemoSwiftVersionString[];
 

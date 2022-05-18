@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/rafaelbenjamin/devbenja/google-maps-ios-demo/GoogleMapsDemo.xcodeproj">
+      location = "group:/Users/rafaelbenjamin/devbenja/google-maps-ios-demo/GooglePlacesDemoSwift.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
