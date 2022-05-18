@@ -56,9 +56,10 @@ class MapViewController: UIViewController, UISearchResultsUpdating, UISearchCont
 }
 
 extension MapViewController: ResultsViewControllerDelegate {
-    func didTapPlace(with coordinates: CLLocationCoordinate2D) {
+    func didTapPlace(with coordinates: CLLocationCoordinate2D, of: Place) {
         searchController?.searchBar.resignFirstResponder()
         searchController?.dismiss(animated: true, completion: nil)
+        searchController?.searchBar.text = of.name
         
         //Remove all map pins
         let annotations = mapView.annotations

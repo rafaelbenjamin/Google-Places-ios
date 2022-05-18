@@ -44,9 +44,10 @@ extension FullScreenAutocompleteController: GMSAutocompleteViewControllerDelegat
         print("Place Address: \(place.formattedAddress ?? "none")")
         print("Place attributions: \(place.attributions?.string ?? "none")")
         
-        if let name = place.name {
-            placeTextField.text = name
+        if let formattedAddress = place.formattedAddress {
+            placeTextField.text = formattedAddress
         }
+        
         dismiss(animated: true,completion: nil)
     }
     

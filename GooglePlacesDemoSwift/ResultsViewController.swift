@@ -9,7 +9,7 @@ import UIKit
 import CoreLocation
 
 protocol ResultsViewControllerDelegate: AnyObject {
-    func didTapPlace(with coordinates: CLLocationCoordinate2D)
+    func didTapPlace(with coordinates: CLLocationCoordinate2D, of place: Place)
 }
 
 class ResultsViewController: UIViewController {
@@ -63,7 +63,7 @@ extension ResultsViewController: UITableViewDelegate, UITableViewDataSource {
             switch result {
             case .success(let coordinate):
                 DispatchQueue.main.async {
-                    self?.delegate?.didTapPlace(with: coordinate)
+                    self?.delegate?.didTapPlace(with: coordinate, of: place)
                 }              
             case .failure(let error):
                 print(error)

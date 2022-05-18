@@ -15,6 +15,7 @@
 			dependencies = (
 			);
 			name = GooglePlaces;
+			productName = GooglePlaces;
 		};
 /* End PBXAggregateTarget section */
 
@@ -43,7 +44,7 @@
 		7356651CDCBB205151E4EF7ECDDBBBDA /* Pods-GooglePlacesDemoSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GooglePlacesDemoSwift-Info.plist"; sourceTree = "<group>"; };
 		77CC6F0BFD6C7DB78D9DEDBDA77FDF0B /* Pods-GooglePlacesDemoSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GooglePlacesDemoSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		7E35301B2920990F1ED444C9A5ECF22F /* Pods-GooglePlacesDemoSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GooglePlacesDemoSwift-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AA5F71CE3D2C61BFB499EE0EBBE3E8C5 /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
 		B7445A632EACF009FC2292BA997DCCCD /* Pods-GooglePlacesDemoSwift-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GooglePlacesDemoSwift-acknowledgements.plist"; sourceTree = "<group>"; };
 		CA510AD43E7DCA8ED9802ADFFD0C7EF3 /* Pods-GooglePlacesDemoSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GooglePlacesDemoSwift"; path = Pods_GooglePlacesDemoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,7 +167,6 @@
 				C8F8453F21266F8283B862F965FD7E13 /* Resources */,
 				857D09760EFF43711EF51D50FDC01736 /* Support Files */,
 			);
-			name = GooglePlaces;
 			path = GooglePlaces;
 			sourceTree = "<group>";
 		};
